@@ -1,19 +1,18 @@
 const twilio = require('twilio');
+require('dotenv').config();
 
 // authentication Api
 const client = twilio(
-	// I liek to make sure things are the right type.
-	String(process.env.ACCOUNT_SID),
-	String(process.env.ACCOUNT_TOKEN)
+	process.env.ACCOUNT_SID,
+	process.env.ACCOUNT_TOKEN
 );
 
 client.messages
 	.create({
-		from: String(process.env.NUMBER_FROM),
-		to: String(process.env.NUMBER_TO),
-		// Input the "to" number here
-		// What is the mediaUrl that you want to send in your message?
-		// Why don't you add a body parameter too?
+		from: process.env.NUMBER_FROM,
+		to: process.env.NUMBER_TO,
+		mediaUrl: "https://api.assistivecards.com/cards/shapes/heart@2x.png",
+		body: 'This is a heart.'
 	})
 	.then(message => {
 		console.log(
