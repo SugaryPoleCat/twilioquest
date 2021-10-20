@@ -32,6 +32,12 @@ You need to start the application from where the .env file is located, because i
 
 So for example: `nodemon js/sms/send-text` will launch that from root, with .env active
 
+It also depends whteer you are doing the TwiML or for example Python Temple.
+
+If you are doing TwiML, first navigate to `cd twiml` and then use `nodemon js/sms/send-text`.
+
+If you are doing for example pythong temple, navigate first to `cd py-temple`
+
 
 # IF PYTHON:
 ## introduction
