@@ -6,15 +6,18 @@ require('dotenv').config();
 // you configured earlier. TwilioQuest makes these configuration properties
 // available as system environment variables in your code
 const client = twilio(
-	process.env.TQ_TWILIO_ACCOUNT_SID,
-	process.env.TQ_TWILIO_AUTH_TOKEN
+	process.env.ACCOUNT_SID,
+	process.env.AUTH_TOKEN
 );
 
 // Here, we use our API client to make a request to the Twilio
 // REST API. Substitute your own mobile number and message body below, and
 // watch what happens when you press play!
 client.messages.create({
-	from: process.env.TQ_TWILIO_NUMBER,
+	from: process.env.NUMBER,
+	to: '+46762357280',
+	body: 'Message'
+
 
 	// Hmm, this code will need two more parameters to work...
 	// I wonder what those parameters are? Better check the docs:
