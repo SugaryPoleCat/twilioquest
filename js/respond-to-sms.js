@@ -8,7 +8,10 @@ app.use(express.urlencoded({ extended: false }));
 
 // Create a route to handle incoming SMS messages
 // This is where the magic happens!
-app.post('/', (request, response) => {
+
+
+// WHEN copying the NGROK link, remember to at the end do /sms to point to THIS route, otherwise it will not work.
+app.post('/sms', (request, response) => {
 	console.log(
 		`Incoming message from ${request.body.From}: ${request.body.Body}`
 	);

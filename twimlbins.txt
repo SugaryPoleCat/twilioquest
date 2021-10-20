@@ -1,0 +1,4 @@
+https://console.twilio.com/us1/develop/twiml-bins/twiml-bins?frameUrl=%2Fconsole%2Ftwiml-bins%3Fx-target-region%3Dus1
+Go to this link and go create a twiml link. You will need this link to continue in "Set up fallback handler" quest.
+
+CLick the big + and follow the instructions in the quest. You might need to create more than one handler.

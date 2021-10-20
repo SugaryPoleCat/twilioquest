@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 # Create a route to handle incoming SMS messages
 # This is where the magic happens!
-@app.route("/", methods=['GET', 'POST'])
+@app.route("/sms", methods=['GET', 'POST'])
 def sms_ahoy_reply():
     print(f'Incoming message from {request.values.get("From")}: ${request.values.get("Body")}')
 

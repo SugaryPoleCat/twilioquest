@@ -1,0 +1,8 @@
+When copying ngrok public IP link and pasting it in webhooks, rememebr to look at:
+app.route and @app/route in py or js, as that is the PATH that the ngrok server will look at.
+So when copying the adress, if this is a SMS webhook, add at the end /sms to point to the right route in the application code.
+
+
+Start ngrok with `ngrok http PORT` where PORT is the port you wish to use.
+Then in the applications, configure the PORT variable to MATCH ngrok PORT. 
+So if you launch ngrok http 8767, make sure your py and js programs ALSO start on 8767 port, otherwise you will get 502 error.
