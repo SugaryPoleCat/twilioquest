@@ -13,3 +13,6 @@ So if you launch ngrok http 8767, make sure your py and js programs ALSO start o
 
 https://console.twilio.com/us1/develop/functions/classic/list?frameUrl=%2Fconsole%2Ffunctions%2Fmanage%3Futm_source%3Dtwilioquest-3%26x-target-region%3Dus1
 this link will be useful for functions in the twilioquest hting
+
+
+You can use the twilio-console folder to copy/paste code from the right thing.
