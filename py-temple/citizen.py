@@ -8,4 +8,3 @@ class Citizen:
 	def full_name(self):
 		fullname = f"{self.first_name} {self.last_name}"
 		return fullname
-		
