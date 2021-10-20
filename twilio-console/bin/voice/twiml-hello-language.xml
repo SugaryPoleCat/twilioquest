@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Response>
+<!-- this lets you choose the language which is in the body of the tag.-->
+<!-- the Voice selects a voice, for the language to be spoken. -->
+<!-- If you write teh body of the tag, in english, but select language ES for spanish,
+A spanish voice will attempt to say the english words, in spanish, which will sound weird. -->
+    <Say language="es-US" voice="Polly.Miguel">Hola, mundo!</Say>
+</Response>
