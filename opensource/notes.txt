@@ -1,0 +1,6 @@
+git clone LINK
+git commit -m "commmit name"
+git push --set-upstream origin BRANCH
+git log  = shows the recent commits
+git checkout commithash/branch = checks out teh branch or commit
+git revert commithash = undoes this commit

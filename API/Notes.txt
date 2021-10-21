@@ -1,0 +1,7 @@
+Api is = Application Programmable Interface
+REST = 4 letter acronym thats popular framework for apis. 
+Api does nto need to be present here.
+4 letter protocol used for all the things = HTTP
+the thing that includes all the information about the request = header.
+Abstract name for a chunk  of data taht can be adressed by URI and REST api = Resource 
+which http method is most commnly used to create new data in REST api = post
