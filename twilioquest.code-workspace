@@ -1,12 +1,17 @@
 {
-	"folders": [
-		{
-			"path": "."
-		}
-	],
+	"folders": [{
+		"path": "."
+	}],
 	"settings": {
 		"files.autoSave": "afterDelay",
 		"editor.wordWrap": "on",
-		"files.autoSaveDelay": 3000
+		"files.autoSaveDelay": 3000,
+		"files.watcherExclude": {
+			"**/.git/objects/**": true,
+			"**/.git/subtree-cache/**": true,
+			"**/node_modules/*/**": true,
+			"**/.hg/store/**": true,
+			"package-lock.json": true
+		}
 	}
 }
